@@ -38,14 +38,14 @@
 
 ## Agenda / Time Blocks
 
-| Time | Block | Duration | Type |
-|---|---|---|---|
-| 00:00 | Opening & Promise | 5 min | Talk |
-| 00:05 | [Topic Block 1] | _ min | Talk / Demo |
-| **:** | [Exercise / Q&A] | _ min | Interactive |
-| **:** | [Topic Block 2] | _ min | Talk / Demo |
-| **:** | [Exercise / Q&A] | _ min | Interactive |
-| **:** | Wrap-up & Takeaways | 5 min | Talk |
+| Time  | Block               | Duration | Type        |
+| ----- | ------------------- | -------- | ----------- |
+| 00:00 | Opening & Promise   | 5 min    | Talk        |
+| 00:05 | [Topic Block 1]     | _ min    | Talk / Demo |
+| **:** | [Exercise / Q&A]    | _ min    | Interactive |
+| **:** | [Topic Block 2]     | _ min    | Talk / Demo |
+| **:** | [Exercise / Q&A]    | _ min    | Interactive |
+| **:** | Wrap-up & Takeaways | 5 min    | Talk        |
 
 > Rule of thumb: No talk block longer than 15 min without interaction.
 

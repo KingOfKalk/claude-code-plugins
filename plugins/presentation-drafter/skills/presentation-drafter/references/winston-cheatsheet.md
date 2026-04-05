@@ -12,12 +12,12 @@
 
 ## Four Engagement Heuristics
 
-| Technique | What it does | How to apply |
-|---|---|---|
-| **Cycling** | Compensates for ~20% audience fog-out | Cover each key idea **3×** from different angles |
-| **Building a Fence** | Prevents confusion with similar ideas | State what it **IS** and what it **IS NOT** |
+| Technique              | What it does                          | How to apply                                                                 |
+| ---------------------- | ------------------------------------- | ---------------------------------------------------------------------------- |
+| **Cycling**            | Compensates for ~20% audience fog-out | Cover each key idea **3×** from different angles                             |
+| **Building a Fence**   | Prevents confusion with similar ideas | State what it **IS** and what it **IS NOT**                                  |
 | **Verbal Punctuation** | Re-entry points for drifted listeners | Enumerate and signpost: _"First… Second… We've now finished X, moving to Y"_ |
-| **Asking Questions** | Jolts audience into active mode | Calibrate difficulty, then **wait 7 full seconds** |
+| **Asking Questions**   | Jolts audience into active mode       | Calibrate difficulty, then **wait 7 full seconds**                           |
 
 ## Time, Place & Setup
 
@@ -28,11 +28,11 @@
 
 ## Tools: Board vs. Slides vs. Props
 
-| Tool | Best for | Why |
-|---|---|---|
-| **Blackboard** | Teaching | Matches cognitive speed; hands have purpose; mirror neurons |
-| **Slides** | Exposing ideas at scale | Visual impact — but only if done right |
-| **Props** | Making ideas unforgettable | Physical objects stick in memory for decades |
+| Tool           | Best for                   | Why                                                         |
+| -------------- | -------------------------- | ----------------------------------------------------------- |
+| **Blackboard** | Teaching                   | Matches cognitive speed; hands have purpose; mirror neurons |
+| **Slides**     | Exposing ideas at scale    | Visual impact — but only if done right                      |
+| **Props**      | Making ideas unforgettable | Physical objects stick in memory for decades                |
 
 ### Slide Rules
 
@@ -54,13 +54,13 @@
 
 ## The Winston Star ⭐ — Making Ideas Stick
 
-| Element | Question |
-|---|---|
-| **Symbol** | Is there a visual icon for my work? |
-| **Slogan** | Can someone describe my idea in one phrase? |
-| **Surprise** | What defies expectations? |
-| **Salient Idea** | What single concept sticks out? |
-| **Story** | Can I narrate how I did it, how it works, why it matters? |
+| Element          | Question                                                  |
+| ---------------- | --------------------------------------------------------- |
+| **Symbol**       | Is there a visual icon for my work?                       |
+| **Slogan**       | Can someone describe my idea in one phrase?               |
+| **Surprise**     | What defies expectations?                                 |
+| **Salient Idea** | What single concept sticks out?                           |
+| **Story**        | Can I narrate how I did it, how it works, why it matters? |
 
 ## VSN-C Structure (Persuasive Talks)
 

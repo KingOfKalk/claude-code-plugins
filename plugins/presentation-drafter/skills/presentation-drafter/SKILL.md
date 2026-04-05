@@ -18,10 +18,10 @@ Draft focused, structured presentation outlines in Markdown using the SCR framew
 
 Ask the user (if not already clear) what kind of session they are preparing:
 
-| Type | Template to use | Key framework |
-|---|---|---|
-| **Persuasive / Business** — board pitch, strategy deck, sales pitch, project update, executive briefing, conference talk, job talk | SCR template | SCR storyline + Winston's VSN-C for job/conference talks |
-| **Teaching / Training** — workshop, brownbag, lunch & learn, internal training, onboarding session | Training template | Winston's engagement heuristics (cycling, fencing, verbal punctuation, questions) |
+| Type                                                                                                                               | Template to use   | Key framework                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
+| **Persuasive / Business** — board pitch, strategy deck, sales pitch, project update, executive briefing, conference talk, job talk | SCR template      | SCR storyline + Winston's VSN-C for job/conference talks                          |
+| **Teaching / Training** — workshop, brownbag, lunch & learn, internal training, onboarding session                                 | Training template | Winston's engagement heuristics (cycling, fencing, verbal punctuation, questions) |
 
 If the type is ambiguous, ask one short question to clarify. Do not over-ask — pick the closest match and proceed.
 
@@ -30,25 +30,30 @@ If the type is ambiguous, ask one short question to clarify. Do not over-ask —
 Before drafting, you need these inputs. Extract from conversation if already provided; only ask for what's missing. Ask in ONE message, not multiple rounds:
 
 **Always needed:**
+
 - Topic / subject
 - Audience (who, what they know, what they care about)
 - Desired outcome (what should the audience do/know/feel after?)
 - Duration (approximate)
 
 **For SCR talks additionally:**
+
 - Are they skeptical or receptive? → determines SCR order variant (SCR / RSC / CSR)
 
 **For Training sessions additionally:**
+
 - What does the audience already know? (starting level)
 - Hands-on exercises planned? (yes / no / unsure)
 
 ## Step 3: Draft the outline
 
 Read the appropriate template from the `assets/` directory:
+
 - SCR talks → read `assets/template-scr.md`
 - Training talks → read `assets/template-training.md`
 
 Then read the relevant reference material:
+
 - For SCR principles → read `references/scr-cheatsheet.md`
 - For Winston speaking principles → read `references/winston-cheatsheet.md`
 - For persuasive job/conference talks using VSN-C → both references
@@ -79,11 +84,11 @@ Fill in the template with the user's content. Follow these rules strictly:
 
 ### SCR order selection
 
-| Variant | Order | Use when |
-|---|---|---|
-| **SCR** (standard) | S → C → R | Audience is skeptical; build the case first |
+| Variant                | Order     | Use when                                        |
+| ---------------------- | --------- | ----------------------------------------------- |
+| **SCR** (standard)     | S → C → R | Audience is skeptical; build the case first     |
 | **RSC** (answer-first) | R → S → C | Audience is receptive; lead with recommendation |
-| **CSR** (concerned) | C → S → R | Audience already feels the pain; validate first |
+| **CSR** (concerned)    | C → S → R | Audience already feels the pain; validate first |
 
 ### Output format
 
@@ -91,10 +96,10 @@ Always output a complete Markdown file following the template structure. Use a d
 
 **Saving the file — detect your environment and act accordingly:**
 
-| Environment | How to detect | Where to save | How to deliver |
-|---|---|---|---|
-| **Claude.ai** | `/mnt/user-data/outputs/` exists | `/mnt/user-data/outputs/draft-[topic].md` | Call `present_files` after saving — without it the user cannot access the file |
-| **Claude Code** | Running in a terminal / local project directory | Save to the **current working directory** (project root), e.g. `./drafts/draft-[topic].md` | The file is in the user's repo — just confirm the path |
+| Environment     | How to detect                                   | Where to save                                                                              | How to deliver                                                                 |
+| --------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| **Claude.ai**   | `/mnt/user-data/outputs/` exists                | `/mnt/user-data/outputs/draft-[topic].md`                                                  | Call `present_files` after saving — without it the user cannot access the file |
+| **Claude Code** | Running in a terminal / local project directory | Save to the **current working directory** (project root), e.g. `./drafts/draft-[topic].md` | The file is in the user's repo — just confirm the path                         |
 
 Detection logic: check if `/mnt/user-data/outputs/` exists. If yes → Claude.ai. Otherwise → Claude Code (save to project root).
 
@@ -103,6 +108,7 @@ Detection logic: check if `/mnt/user-data/outputs/` exists. If yes → Claude.ai
 After the first draft, prompt the user with the quality checklist relevant to their talk type. Present it as a quick interactive review, not a wall of text.
 
 **For SCR talks:**
+
 - Does S→but→C→therefore→R flow naturally?
 - Is the Situation ≤3 slides of noncontroversial facts?
 - Does the Complication create clear "why now?" urgency?
@@ -110,6 +116,7 @@ After the first draft, prompt the user with the quality checklist relevant to th
 - Do key messages alone tell the full story (horizontal logic)?
 
 **For Training sessions:**
+
 - Is there an empowerment promise in the first 2 minutes?
 - Does each key concept cycle 3×?
 - Is every concept fenced (IS / IS NOT)?
@@ -117,6 +124,7 @@ After the first draft, prompt the user with the quality checklist relevant to th
 - Are questions calibrated (not too easy, not too hard)?
 
 **For all talks:**
+
 - Final slide = Contributions?
 - Winston Star check passed?
 - Practiced with someone unfamiliar?

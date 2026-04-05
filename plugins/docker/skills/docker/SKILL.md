@@ -36,26 +36,27 @@ Manage Docker containers with automatic devcontainer detection and self-protecti
 
 Extract the action and optional target from `$ARGUMENTS`:
 
-| Argument pattern | Command | Devcontainer guard |
-|---|---|---|
-| `ps [--all]` | `docker ps [--all] --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"` | No |
-| `logs <container> [lines]` | `docker logs --tail <lines\|50> <container>` | No |
-| `exec <container> [cmd]` | `docker exec <container> <cmd\|sh>` | Yes — refuse if self |
-| `stop <container>` | `docker stop <container>` | Yes — refuse if self |
-| `start <container>` | `docker start <container>` | No |
-| `rm <container>` | `docker rm <container>` | Yes — refuse if self |
-| `images` | `docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.CreatedSince}}"` | No |
-| `pull <image>` | `docker pull <image>` | No |
-| `build [context]` | `docker build <context\|.>` | No |
-| `inspect <container>` | `docker inspect <container>` | No |
-| `stats [container]` | `docker stats --no-stream [container]` | No |
-| `prune` | `docker system prune` | Ask user confirmation first |
+| Argument pattern           | Command                                                                                  | Devcontainer guard          |
+| -------------------------- | ---------------------------------------------------------------------------------------- | --------------------------- |
+| `ps [--all]`               | `docker ps [--all] --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"`     | No                          |
+| `logs <container> [lines]` | `docker logs --tail <lines\|50> <container>`                                             | No                          |
+| `exec <container> [cmd]`   | `docker exec <container> <cmd\|sh>`                                                      | Yes — refuse if self        |
+| `stop <container>`         | `docker stop <container>`                                                                | Yes — refuse if self        |
+| `start <container>`        | `docker start <container>`                                                               | No                          |
+| `rm <container>`           | `docker rm <container>`                                                                  | Yes — refuse if self        |
+| `images`                   | `docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.CreatedSince}}"` | No                          |
+| `pull <image>`             | `docker pull <image>`                                                                    | No                          |
+| `build [context]`          | `docker build <context\|.>`                                                              | No                          |
+| `inspect <container>`      | `docker inspect <container>`                                                             | No                          |
+| `stats [container]`        | `docker stats --no-stream [container]`                                                   | No                          |
+| `prune`                    | `docker system prune`                                                                    | Ask user confirmation first |
 
 If `$ARGUMENTS` is empty or unclear, run `ps` and ask what the user wants to do.
 
 ### 2. Detect environment
 
 Check the container environment from Current State:
+
 - If it shows a 64-character hex ID → running inside a devcontainer, apply guards
 - If it shows `NOT_IN_CONTAINER` → running on host, no guards needed
 
