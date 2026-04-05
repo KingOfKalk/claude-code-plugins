@@ -24,6 +24,13 @@
       "description": "Manage Docker Compose services with devcontainer detection and safety constraints.",
       "keywords": ["docker", "docker-compose", "containers", "devcontainer"],
       "category": "developer-tools"
+    },
+    {
+      "name": "presentation-drafter",
+      "source": "./skills/presentation-drafter",
+      "description": "Draft structured presentation outlines using the SCR framework and Patrick Winston's How to Speak principles.",
+      "keywords": ["presentation", "slides", "SCR", "outline", "talk"],
+      "category": "productivity"
     }
   ]
 }
