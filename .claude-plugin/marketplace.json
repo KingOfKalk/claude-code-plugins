@@ -17,6 +17,13 @@
       "description": "Manage Docker containers with automatic devcontainer detection and self-protection.",
       "keywords": ["docker", "containers", "devcontainer"],
       "category": "developer-tools"
+    },
+    {
+      "name": "docker-compose",
+      "source": "./skills/docker-compose",
+      "description": "Manage Docker Compose services with devcontainer detection and safety constraints.",
+      "keywords": ["docker", "docker-compose", "containers", "devcontainer"],
+      "category": "developer-tools"
     }
   ]
 }
