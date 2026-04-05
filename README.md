@@ -33,3 +33,15 @@ Features:
 - Automatic devcontainer detection — refuses to stop/remove the container you're running in
 - Supports logs, exec, build, pull, stats, and prune
 - Safe defaults with user confirmation for destructive actions
+
+### docker-compose
+
+Manage Docker Compose services with automatic devcontainer detection and safety constraints.
+
+**Usage:** `/docker-compose <action> [service]`
+
+Features:
+- Status, rebuild, restart, stop, up, down, logs, pull, config, and health checks
+- Blocks `docker compose down` inside devcontainers to protect the dev stack
+- Validates service names against the compose project
+- Auto-shows logs on failure and unhealthy health check details
