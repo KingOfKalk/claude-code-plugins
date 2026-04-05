@@ -10,6 +10,13 @@
       "description": "Create atomic git commits following the Conventional Commits specification. Automatically splits unrelated changes into separate commits.",
       "keywords": ["git", "commit", "conventional-commits"],
       "category": "developer-tools"
+    },
+    {
+      "name": "docker",
+      "source": "./skills/docker",
+      "description": "Manage Docker containers with automatic devcontainer detection and self-protection.",
+      "keywords": ["docker", "containers", "devcontainer"],
+      "category": "developer-tools"
     }
   ]
 }

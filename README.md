@@ -21,3 +21,15 @@ Features:
 - Automatically splits unrelated changes into atomic commits
 - Presents a commit plan for review before executing
 - Supports path and semantic arguments for filtering changes
+
+### docker
+
+Manage Docker containers with automatic devcontainer detection and self-protection.
+
+**Usage:** `/docker <action> [target]`
+
+Features:
+- List, inspect, start, stop, and remove containers
+- Automatic devcontainer detection — refuses to stop/remove the container you're running in
+- Supports logs, exec, build, pull, stats, and prune
+- Safe defaults with user confirmation for destructive actions
