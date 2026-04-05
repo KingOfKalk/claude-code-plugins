@@ -45,3 +45,15 @@ Features:
 - Blocks `docker compose down` inside devcontainers to protect the dev stack
 - Validates service names against the compose project
 - Auto-shows logs on failure and unhealthy health check details
+
+### presentation-drafter
+
+Draft structured presentation outlines in Markdown using the SCR (Situation-Complication-Resolution) framework and Patrick Winston's "How to Speak" principles.
+
+**Usage:** `/presentation-drafter`
+
+Features:
+- SCR storyline framework for persuasive/business talks
+- Winston's engagement heuristics for teaching/training sessions
+- Includes reference cheatsheets and reusable templates
+- Outputs Markdown outlines — never slides directly
