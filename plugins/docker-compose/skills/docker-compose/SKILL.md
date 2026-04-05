@@ -44,6 +44,7 @@ Manage Docker Compose services with automatic devcontainer detection and safety 
 ### 1. Check for compose project
 
 If Current State shows `NO_COMPOSE_PROJECT`:
+
 - For `status`: Report no Docker Compose project found in the current directory.
 - For any other action: Tell the user there is no compose project and suggest checking the directory.
 - Do not run any compose commands.
@@ -52,18 +53,18 @@ If Current State shows `NO_COMPOSE_PROJECT`:
 
 Extract the action and optional service from `$ARGUMENTS`:
 
-| Argument pattern | Inside devcontainer | Outside devcontainer |
-|---|---|---|
-| `status` | `docker compose ps` | Same |
-| `up [service]` | Require `--no-deps -d` + service name | `docker compose up -d [service]` |
-| `down` | **BLOCKED** — refuse, explain risk | `docker compose down` |
-| `rebuild <service>` | `docker compose up -d --no-deps --build <service>` | `docker compose up -d --build [service]` |
-| `restart <service>` | Require explicit service, verify not self | `docker compose restart [service]` |
-| `stop <service>` | Require explicit service, verify not self | `docker compose stop [service]` |
-| `logs <service> [lines]` | `docker compose logs --tail <lines\|50> <service>` | Same |
-| `pull [service]` | `docker compose pull [service]` | Same |
-| `config` | `docker compose config` | Same |
-| `health [service]` | Health status via `docker inspect` | Same |
+| Argument pattern         | Inside devcontainer                                | Outside devcontainer                     |
+| ------------------------ | -------------------------------------------------- | ---------------------------------------- |
+| `status`                 | `docker compose ps`                                | Same                                     |
+| `up [service]`           | Require `--no-deps -d` + service name              | `docker compose up -d [service]`         |
+| `down`                   | **BLOCKED** — refuse, explain risk                 | `docker compose down`                    |
+| `rebuild <service>`      | `docker compose up -d --no-deps --build <service>` | `docker compose up -d --build [service]` |
+| `restart <service>`      | Require explicit service, verify not self          | `docker compose restart [service]`       |
+| `stop <service>`         | Require explicit service, verify not self          | `docker compose stop [service]`          |
+| `logs <service> [lines]` | `docker compose logs --tail <lines\|50> <service>` | Same                                     |
+| `pull [service]`         | `docker compose pull [service]`                    | Same                                     |
+| `config`                 | `docker compose config`                            | Same                                     |
+| `health [service]`       | Health status via `docker inspect`                 | Same                                     |
 
 If `$ARGUMENTS` is empty or unclear, show `status` and ask what the user wants to do.
 
@@ -74,6 +75,7 @@ If the action targets a specific service, verify it exists against the Available
 ### 4. Detect environment
 
 Check the container environment from Current State:
+
 - 64-character hex ID → inside devcontainer, apply safety rules
 - `NOT_IN_CONTAINER` → on host, no restrictions
 
@@ -92,6 +94,7 @@ Compare prefix against detected container ID. If match → **refuse** and explai
 Run the appropriate command from the action table.
 
 For `health [service]`:
+
 ```bash
 docker inspect --format '{{.State.Health.Status}}' <container>
 docker inspect --format '{{range .State.Health.Log}}{{.Output}}{{end}}' <container>
@@ -104,6 +107,7 @@ docker inspect --format '{{range .State.Health.Log}}{{.Output}}{{end}}' <contain
 - Any error output
 
 On failure: show last 50 lines of service logs:
+
 ```bash
 docker compose logs --tail 50 <service>
 ```

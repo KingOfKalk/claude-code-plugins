@@ -175,7 +175,7 @@ For each approved commit:
    **Fallback:** If `git apply --cached` fails (e.g. interleaved changes within a single hunk that cannot be split), stage the entire file with `git add <file>` and include all remaining changes for that file in the current commit. Note this in the commit plan.
 
 2. Determine the correct **type** and optional **scope** (see Scope rules above) from the staged diff.
-3. Write a concise **description** in imperative mood, lowercase, no period at end.  Max 72 chars.
+3. Write a concise **description** in imperative mood, lowercase, no period at end. Max 72 chars.
 4. Add a **body** only if the change is non-trivial. Wrap at 72 chars.
 5. Add **footers** only if needed (e.g. `BREAKING CHANGE:`, `Refs: #123`).
 6. Commit with `git commit -m "..."` (use `-m` for subject and `-m` for body if needed).
