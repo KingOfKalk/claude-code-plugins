@@ -5,7 +5,13 @@ A collection of Claude Code skills, installable via the marketplace/plugin featu
 ## Installation
 
 ```
-/plugin marketplace add KingOfKalk/skills
+/plugin marketplace add kingofkalk/skills
+```
+
+To pin a specific version:
+
+```
+/plugin marketplace add kingofkalk/skills@v1.0.0
 ```
 
 ## Available Skills
