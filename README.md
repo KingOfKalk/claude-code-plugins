@@ -11,7 +11,7 @@ A collection of Claude Code skills, installable via the marketplace/plugin featu
 To pin a specific version:
 
 ```
-/plugin marketplace add kingofkalk/skills@v1.0.0
+/plugin marketplace add kingofkalk/skills@v1
 ```
 
 ## Available Skills
