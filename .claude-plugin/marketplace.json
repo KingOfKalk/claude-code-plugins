@@ -6,28 +6,28 @@
   "plugins": [
     {
       "name": "commit",
-      "source": "./skills/commit",
+      "source": "./plugins/commit",
       "description": "Create atomic git commits following the Conventional Commits specification. Automatically splits unrelated changes into separate commits.",
       "keywords": ["git", "commit", "conventional-commits"],
       "category": "developer-tools"
     },
     {
       "name": "docker",
-      "source": "./skills/docker",
+      "source": "./plugins/docker",
       "description": "Manage Docker containers with automatic devcontainer detection and self-protection.",
       "keywords": ["docker", "containers", "devcontainer"],
       "category": "developer-tools"
     },
     {
       "name": "docker-compose",
-      "source": "./skills/docker-compose",
+      "source": "./plugins/docker-compose",
       "description": "Manage Docker Compose services with devcontainer detection and safety constraints.",
       "keywords": ["docker", "docker-compose", "containers", "devcontainer"],
       "category": "developer-tools"
     },
     {
       "name": "presentation-drafter",
-      "source": "./skills/presentation-drafter",
+      "source": "./plugins/presentation-drafter",
       "description": "Draft structured presentation outlines using the SCR framework and Patrick Winston's How to Speak principles.",
       "keywords": ["presentation", "slides", "SCR", "outline", "talk"],
       "category": "productivity"
