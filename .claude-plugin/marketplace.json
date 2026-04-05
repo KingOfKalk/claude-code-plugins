@@ -1,0 +1,15 @@
+{
+  "name": "kingofkalk-skills",
+  "owner": {
+    "name": "KingOfKalk"
+  },
+  "plugins": [
+    {
+      "name": "commit",
+      "source": "./skills/commit",
+      "description": "Create atomic git commits following the Conventional Commits specification. Automatically splits unrelated changes into separate commits.",
+      "keywords": ["git", "commit", "conventional-commits"],
+      "category": "developer-tools"
+    }
+  ]
+}
