@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/KingOfKalk/skills/compare/v1.1.0...v1.1.1) (2026-04-11)
+
+
+### Documentation
+
+* **readme:** slim skill list and link to per-skill SKILL.md ([#14](https://github.com/KingOfKalk/skills/issues/14)) ([43a0782](https://github.com/KingOfKalk/skills/commit/43a07821027dd1842d58688159afc423f0c45482))
+* **readme:** sort skills alphabetically ([#12](https://github.com/KingOfKalk/skills/issues/12)) ([b5fc784](https://github.com/KingOfKalk/skills/commit/b5fc784e95aa1bf55e4a20c365c0a8a81cb4a073))
+
 ## [1.1.0](https://github.com/KingOfKalk/skills/compare/v1.0.1...v1.1.0) (2026-04-11)
 
 
