@@ -52,18 +52,6 @@ Features:
 - Validates service names against the compose project
 - Auto-shows logs on failure and unhealthy health check details
 
-### presentation-drafter
-
-Draft structured presentation outlines in Markdown using the SCR (Situation-Complication-Resolution) framework and Patrick Winston's "How to Speak" principles.
-
-**Usage:** `/presentation-drafter`
-
-Features:
-- SCR storyline framework for persuasive/business talks
-- Winston's engagement heuristics for teaching/training sessions
-- Includes reference cheatsheets and reusable templates
-- Outputs Markdown outlines — never slides directly
-
 ### obsidian
 
 Interact with Obsidian vaults via the Obsidian CLI. Create, read, search, edit, and restructure notes in a PARA-organized vault with safety rules for the CLI's known silent-failure modes.
@@ -76,3 +64,15 @@ Features:
 - Search, tag, task, and property queries via the Obsidian CLI
 - Bundled references: CLI cheatsheet, known-bug workarounds (Obsidian CLI 1.12), and a PARA method guide
 - Safety rules to avoid silent data loss (never trust exit codes, always `silent` on `create`, etc.)
+
+### presentation-drafter
+
+Draft structured presentation outlines in Markdown using the SCR (Situation-Complication-Resolution) framework and Patrick Winston's "How to Speak" principles.
+
+**Usage:** `/presentation-drafter`
+
+Features:
+- SCR storyline framework for persuasive/business talks
+- Winston's engagement heuristics for teaching/training sessions
+- Includes reference cheatsheets and reusable templates
+- Outputs Markdown outlines — never slides directly
