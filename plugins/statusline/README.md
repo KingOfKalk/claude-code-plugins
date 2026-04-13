@@ -12,11 +12,18 @@ A colorful Claude Code statusline that renders on a single line:
 
 ## Installation
 
-Install via the KingOfKalk marketplace:
+Install via the KingOfKalk marketplace in Claude Code
 
 ```
 /plugin marketplace add KingOfKalk/claude_code_plugins
 /plugin install statusline@KingOfKalk:claude_code_plugins
+```
+
+or directly in your termimal
+
+```bash
+claude plugin marketplace add KingOfKalk/claude_code_plugins
+claude plugin install statusline@KingOfKalk:claude_code_plugins
 ```
 
 Installing the plugin is not enough — Claude Code does not yet pick up `statusLine` from plugin manifests, so you must wire the script into your own `settings.json` to activate it.
