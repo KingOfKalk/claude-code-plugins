@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.2...v1.3.3) (2026-04-13)
+
+
+### Bug Fixes
+
+* corrects name and replaces / with : ([#27](https://github.com/KingOfKalk/claude_code_plugins/issues/27)) ([a074f64](https://github.com/KingOfKalk/claude_code_plugins/commit/a074f64ee33f2a3618b54fa340292ab78e947553))
+
 ## [1.3.2](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.1...v1.3.2) (2026-04-13)
 
 
