@@ -1,0 +1,10 @@
+{
+  "name": "statusline",
+  "description": "Colorful Claude Code statusline showing model, cwd, git branch/dirty state, context-window usage bar, and output style.",
+  "author": "KingOfKalk",
+  "statusLine": {
+    "type": "command",
+    "command": "${CLAUDE_PLUGIN_ROOT}/statusline.sh",
+    "padding": 0
+  }
+}
