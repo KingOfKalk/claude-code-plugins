@@ -16,7 +16,7 @@ Install via the KingOfKalk marketplace:
 
 ```
 /plugin marketplace add KingOfKalk/claude_code_plugins
-/plugin install statusline@KingOfKalk/claude_code_plugins
+/plugin install statusline@KingOfKalk:claude_code_plugins
 ```
 
 Installing the plugin is not enough — Claude Code does not yet pick up `statusLine` from plugin manifests, so you must wire the script into your own `settings.json` to activate it.
