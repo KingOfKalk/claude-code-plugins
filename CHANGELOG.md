@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.5](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.4...v1.3.5) (2026-04-13)
+
+
+### Bug Fixes
+
+* remove author from plugin.json ([#33](https://github.com/KingOfKalk/claude_code_plugins/issues/33)) ([f983c7f](https://github.com/KingOfKalk/claude_code_plugins/commit/f983c7f907dae38dfd689887c58fd15766a76bc4))
+* update author field to include name in URL in plugin.json ([#31](https://github.com/KingOfKalk/claude_code_plugins/issues/31)) ([046319d](https://github.com/KingOfKalk/claude_code_plugins/commit/046319d283e6fb41a1ba55bed9fe0816d356ca29))
+
 ## [1.3.4](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.3...v1.3.4) (2026-04-13)
 
 
