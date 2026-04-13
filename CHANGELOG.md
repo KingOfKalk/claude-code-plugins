@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.8](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.7...v1.3.8) (2026-04-13)
+
+
+### Bug Fixes
+
+* **marketplace:** use kebab-case name to unblock plugin loading ([#39](https://github.com/KingOfKalk/claude_code_plugins/issues/39)) ([f8164aa](https://github.com/KingOfKalk/claude_code_plugins/commit/f8164aa31e1b2aff1ba9c7b3b0ddf3e9c5a421f3))
+
 ## [1.3.7](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.6...v1.3.7) (2026-04-13)
 
 
