@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/KingOfKalk/skills/compare/v1.2.0...v1.3.0) (2026-04-13)
+
+
+### Features
+
+* **plugins/commit:** enable model auto-invocation ([#21](https://github.com/KingOfKalk/skills/issues/21)) ([9914afa](https://github.com/KingOfKalk/skills/commit/9914afad55a4b70bda54b99954f6ed2509d9c2bb))
+* **plugins/statusline:** add statusline plugin ([#18](https://github.com/KingOfKalk/skills/issues/18)) ([98c4755](https://github.com/KingOfKalk/skills/commit/98c47550539e224ee4d70834875cacba9e94a4de))
+
+
+### Documentation
+
+* **readme:** rename Skills to Plugins and add statusline page ([#20](https://github.com/KingOfKalk/skills/issues/20)) ([6ce01d8](https://github.com/KingOfKalk/skills/commit/6ce01d8ae6a3ab25b83bc68c7275eadcfae39d9d))
+
 ## [1.2.0](https://github.com/KingOfKalk/skills/compare/v1.1.1...v1.2.0) (2026-04-13)
 
 
