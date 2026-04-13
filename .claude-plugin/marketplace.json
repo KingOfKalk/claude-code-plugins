@@ -27,6 +27,13 @@
       "category": "developer-tools"
     },
     {
+      "name": "obsidian",
+      "source": "./plugins/obsidian",
+      "description": "Interact with Obsidian vaults via the Obsidian CLI: create, read, search, edit, and restructure notes following the PARA method.",
+      "keywords": ["obsidian", "notes", "vault", "para", "knowledge-management", "daily-notes"],
+      "category": "productivity"
+    },
+    {
       "name": "presentation-drafter",
       "source": "./plugins/presentation-drafter",
       "description": "Draft structured presentation outlines using the SCR framework and Patrick Winston's How to Speak principles.",
