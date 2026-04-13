@@ -19,7 +19,22 @@ Install via the KingOfKalk marketplace:
 /plugin install statusline@KingOfKalk/claude_code_plugins
 ```
 
-The statusline activates automatically once the plugin is enabled — there is no slash command.
+Installing the plugin is not enough — Claude Code does not yet pick up `statusLine` from plugin manifests, so you must wire the script into your own `settings.json` to activate it.
+
+Add the following to `~/.claude/settings.json` (or your project's `.claude/settings.json`):
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "$HOME/.claude/plugins/marketplaces/KingOfKalk:claude_code_plugins/plugins/statusline/statusline.sh",
+    "padding": 0,
+    "refreshInterval": 5
+  }
+}
+```
+
+Restart Claude Code after editing `settings.json` to see the statusline.
 
 ## Requirements
 
@@ -29,4 +44,4 @@ The statusline activates automatically once the plugin is enabled — there is n
 
 ## How it works
 
-Claude Code invokes `statusline.sh` on every render, piping a JSON payload to stdin. The script extracts model, cwd, context-window remaining percentage, and output style, then prints a single ANSI-colored line. The plugin manifest (`.claude-plugin/plugin.json`) registers the script via the `statusLine` field using `${CLAUDE_PLUGIN_ROOT}` so the path resolves regardless of install location.
+Claude Code invokes `statusline.sh` on every render, piping a JSON payload to stdin. The script extracts model, cwd, context-window remaining percentage, and output style, then prints a single ANSI-colored line.
