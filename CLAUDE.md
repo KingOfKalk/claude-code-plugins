@@ -9,3 +9,7 @@
 - Do **not** add co-author trailers to commit messages.
   - No `Co-Authored-By: Claude <...>` lines.
   - No "Generated with Claude Code" footers.
+
+## Pull requests
+
+- PR titles **must** follow the Conventional Commits specification (same format as commit messages).
