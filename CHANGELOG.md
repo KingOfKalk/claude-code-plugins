@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.7](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.6...v1.3.7) (2026-04-13)
+
+
+### Bug Fixes
+
+* **plugins:** add plugin.json manifests so skills are discovered ([#37](https://github.com/KingOfKalk/claude_code_plugins/issues/37)) ([5243c52](https://github.com/KingOfKalk/claude_code_plugins/commit/5243c523a66bba836817e28753c0310cdd714de5))
+
 ## [1.3.6](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.5...v1.3.6) (2026-04-13)
 
 
