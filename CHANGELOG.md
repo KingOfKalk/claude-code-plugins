@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/KingOfKalk/skills/compare/v1.1.1...v1.2.0) (2026-04-13)
+
+
+### Features
+
+* **marketplace:** register obsidian plugin ([#15](https://github.com/KingOfKalk/skills/issues/15)) ([929c74b](https://github.com/KingOfKalk/skills/commit/929c74b19071a56c985cf7b4c145cce0f53971ff))
+
+
+### Documentation
+
+* add CLAUDE.md with commit and PR guidelines ([#16](https://github.com/KingOfKalk/skills/issues/16)) ([76085a4](https://github.com/KingOfKalk/skills/commit/76085a4e9c57e5ca5d6b7c1ce01cfbeca0743096))
+
 ## [1.1.1](https://github.com/KingOfKalk/skills/compare/v1.1.0...v1.1.1) (2026-04-11)
 
 
