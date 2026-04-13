@@ -1,0 +1,4 @@
+{
+  "name": "obsidian",
+  "description": "Interact with Obsidian vaults via the Obsidian CLI: create, read, search, edit, and restructure notes following the PARA method."
+}
