@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.3...v1.3.4) (2026-04-13)
+
+
+### Documentation
+
+* **statusline:** document manual settings.json activation ([#29](https://github.com/KingOfKalk/claude_code_plugins/issues/29)) ([068c1c0](https://github.com/KingOfKalk/claude_code_plugins/commit/068c1c04071bdcf1c39d123ef0419ce16a8e677a))
+
 ## [1.3.3](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.2...v1.3.3) (2026-04-13)
 
 
