@@ -1,4 +1,4 @@
-# Skills
+# Claude Code Plugins
 
 A collection of Claude Code plugins, installable via the marketplace.
 
