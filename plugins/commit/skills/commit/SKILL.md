@@ -2,7 +2,7 @@
 name: commit
 description: Create atomic git commits following the Conventional Commits specification. Automatically splits unrelated changes into separate commits.
 argument-hint: "[scope or guidance, e.g. 'only auth changes']"
-disable-model-invocation: true
+disable-model-invocation: false
 allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git commit:*), Bash(git log:*), Bash(git reset:*), Bash(git apply:*), Bash(diff:*), Bash(rm .git/commit-skill-*), Write(.git/commit-skill-*)
 ---
 
