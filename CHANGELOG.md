@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.6](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.5...v1.3.6) (2026-04-13)
+
+
+### Bug Fixes
+
+* fixes installation command in README for statusline plugin ([#34](https://github.com/KingOfKalk/claude_code_plugins/issues/34)) ([361246f](https://github.com/KingOfKalk/claude_code_plugins/commit/361246fe0be09b2c33a412dd05dfd0340a35e888))
+
 ## [1.3.5](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.4...v1.3.5) (2026-04-13)
 
 
