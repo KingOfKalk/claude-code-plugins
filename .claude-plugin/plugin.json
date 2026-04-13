@@ -2,7 +2,10 @@
   "name": "KingOfKalk:claude_code_plugins",
   "version": "1.3.4",
   "description": "A collection of Claude Code plugins by KingOfKalk",
-  "author": "KingOfKalk",
+  "author": {
+    "name": "KingOfKalk",
+    "url": "https://github.com/KingOfKalk"
+  },
   "repository": "https://github.com/KingOfKalk/claude_code_plugins",
   "license": "MIT"
 }
