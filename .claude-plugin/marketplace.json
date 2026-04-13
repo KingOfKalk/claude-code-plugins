@@ -39,6 +39,13 @@
       "description": "Draft structured presentation outlines using the SCR framework and Patrick Winston's How to Speak principles.",
       "keywords": ["presentation", "slides", "SCR", "outline", "talk"],
       "category": "productivity"
+    },
+    {
+      "name": "statusline",
+      "source": "./plugins/statusline",
+      "description": "Colorful statusline showing model, cwd, git branch/dirty state, context-window usage bar, and output style.",
+      "keywords": ["statusline", "ui", "git", "context-window"],
+      "category": "ui"
     }
   ]
 }
