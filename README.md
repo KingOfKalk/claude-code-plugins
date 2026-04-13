@@ -5,13 +5,13 @@ A collection of Claude Code plugins, installable via the marketplace.
 ## Installation
 
 ```
-/plugin marketplace add kingofkalk/skills
+/plugin marketplace add KingOfKalk/claude_code_plugins
 ```
 
 To pin a specific version:
 
 ```
-/plugin marketplace add kingofkalk/skills@v1
+/plugin marketplace add KingOfKalk/claude_code_plugins@v1
 ```
 
 ## Available Plugins
