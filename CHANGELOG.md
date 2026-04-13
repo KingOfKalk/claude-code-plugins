@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.1...v1.3.2) (2026-04-13)
+
+
+### chore
+
+* release v1.3.2 ([5f01571](https://github.com/KingOfKalk/claude_code_plugins/commit/5f01571331b8822d449ca5aafb30a9922d58db99))
+
 ## [1.3.1](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.0...v1.3.1) (2026-04-13)
 
 
