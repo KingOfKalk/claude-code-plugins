@@ -14,6 +14,16 @@ To pin a specific version:
 /plugin marketplace add KingOfKalk/claude_code_plugins@v1
 ```
 
+## Installing a single plugin
+
+Once the marketplace is added, install individual plugins by name. The
+marketplace identifier is `kingofkalk-claude-code-plugins`:
+
+```
+/plugin install commit@kingofkalk-claude-code-plugins
+/reload-plugins
+```
+
 ## Available Plugins
 
 - [**commit**](plugins/commit/skills/commit/SKILL.md) — *skill* — atomic git commits following the Conventional Commits spec, auto-splitting unrelated changes.
