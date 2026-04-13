@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.0...v1.3.1) (2026-04-13)
+
+
+### Documentation
+
+* **readme:** annotate plugin list with component types ([#23](https://github.com/KingOfKalk/claude_code_plugins/issues/23)) ([3fedd66](https://github.com/KingOfKalk/claude_code_plugins/commit/3fedd66693f38a4cccbfcdd44dcb27f5989393b7))
+
 ## [1.3.0](https://github.com/KingOfKalk/skills/compare/v1.2.0...v1.3.0) (2026-04-13)
 
 
