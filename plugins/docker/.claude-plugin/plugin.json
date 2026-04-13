@@ -1,0 +1,4 @@
+{
+  "name": "docker",
+  "description": "Manage Docker containers with automatic devcontainer detection and self-protection."
+}
