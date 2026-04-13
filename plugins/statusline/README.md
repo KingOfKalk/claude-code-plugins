@@ -15,8 +15,8 @@ A colorful Claude Code statusline that renders on a single line:
 Install via the KingOfKalk marketplace:
 
 ```
-/plugin marketplace add kingofkalk/skills
-/plugin install statusline@kingofkalk-skills
+/plugin marketplace add kingofkalk/claude_code_plugins
+/plugin install statusline@kingofkalk-claude-code-plugins
 ```
 
 The statusline activates automatically once the plugin is enabled — there is no slash command.

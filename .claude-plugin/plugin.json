@@ -1,8 +1,8 @@
 {
-  "name": "kingofkalk-skills",
+  "name": "kingofkalk-claude-code-plugins",
   "version": "1.3.0",
-  "description": "A collection of Claude Code skills by KingOfKalk",
+  "description": "A collection of Claude Code plugins by KingOfKalk",
   "author": "KingOfKalk",
-  "repository": "https://github.com/KingOfKalk/skills",
+  "repository": "https://github.com/KingOfKalk/claude_code_plugins",
   "license": "MIT"
 }
