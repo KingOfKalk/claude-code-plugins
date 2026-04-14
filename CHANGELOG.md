@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v2.0.0...v3.0.0) (2026-04-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **plugins/commit:** the `commit` plugin is now `git`. Reinstall with `/plugin install git@kingofkalk-claude-code-plugins`. The skill invocation changes from `commit:commit` to `git:commit`.
+
+### Refactoring
+
+* **plugins/commit:** rename plugin to git ([#48](https://github.com/KingOfKalk/claude-code-plugins/issues/48)) ([ecfe43d](https://github.com/KingOfKalk/claude-code-plugins/commit/ecfe43d4c676e427a2c7614d7f0b31de1fdcddb1))
+
 ## [2.0.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v1.4.0...v2.0.0) (2026-04-14)
 
 
