@@ -1,5 +1,5 @@
 ---
-name: obsidian
+name: vault
 description: >
   Interact with Obsidian vaults via the Obsidian CLI. Use this skill whenever the user wants to
   create, read, search, edit, move, restructure, or query notes in Obsidian. Also use when the user
