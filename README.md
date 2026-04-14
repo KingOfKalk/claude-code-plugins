@@ -20,13 +20,13 @@ Once the marketplace is added, install individual plugins by name. The
 marketplace identifier is `kingofkalk-claude-code-plugins`:
 
 ```
-/plugin install commit@kingofkalk-claude-code-plugins
+/plugin install git@kingofkalk-claude-code-plugins
 /reload-plugins
 ```
 
 ## Available Plugins
 
-- [**commit**](plugins/commit/skills/commit/SKILL.md) — *skill* — atomic git commits following the Conventional Commits spec, auto-splitting unrelated changes.
+- [**git**](plugins/git/skills/commit/SKILL.md) — *skill* — atomic git commits following the Conventional Commits spec, auto-splitting unrelated changes.
 - [**docker**](plugins/docker/skills/docker/SKILL.md) — *skill* — manage Docker containers with devcontainer detection and self-protection.
 - [**docker-compose**](plugins/docker-compose/skills/docker-compose/SKILL.md) — *skill* — manage Docker Compose services with devcontainer safety constraints.
 - [**obsidian**](plugins/obsidian/skills/vault/SKILL.md) — *skill* — PARA-aware Obsidian vault operations via the Obsidian CLI, with safety rules for known silent-failure modes. Bundles a [**daily**](plugins/obsidian/skills/daily/SKILL.md) skill for morning planning and evening review of the daily journal.
