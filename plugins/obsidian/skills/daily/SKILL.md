@@ -1,6 +1,6 @@
 ---
 name: daily
-description: Manage the user's daily journal in Obsidian using a structured morning/evening workflow. Use this skill whenever the user mentions their daily journal, daily note, morning planning, evening review, daily agenda, daily log, or any variation of "plan my day", "review my day", "update my journal", "what's on today", "wrap up my day", "end of day", "start of day", or "daily". Also trigger when the user asks to check, create, or update today's (or any specific date's) journal entry. This skill depends on the `obsidian` skill for vault access and CLI operations — always read the `obsidian` SKILL.md first.
+description: Manage the user's daily journal in Obsidian using a structured morning/evening workflow. Use this skill whenever the user mentions their daily journal, daily note, morning planning, evening review, daily agenda, daily log, or any variation of "plan my day", "review my day", "update my journal", "what's on today", "wrap up my day", "end of day", "start of day", or "daily". Also trigger when the user asks to check, create, or update today's (or any specific date's) journal entry. This skill depends on the `vault` skill for vault access and CLI operations — always read the `vault` SKILL.md first.
 ---
 
 # Obsidian Daily Journal
@@ -9,14 +9,14 @@ A skill for preparing, updating, and maintaining daily journal entries in the us
 
 ## Dependencies
 
-- **`obsidian` skill**: Read it first for vault path, CLI commands, file conventions, and `claude.md` rules.
+- **`vault` skill**: Read it first for vault path, CLI commands, file conventions, and `claude.md` rules.
 - **User's `claude.md`**: Always check for vault-specific conventions before writing.
 
 ## Journal Template
 
 Do NOT hardcode or assume the template structure. Instead:
 
-1. Use the `obsidian` skill to locate the journal template in the vault (check Obsidian's template folder / daily notes settings).
+1. Use the `vault` skill to locate the journal template in the vault (check Obsidian's template folder / daily notes settings).
 2. Read the actual template file to understand the current structure — it may have changed since this skill was written.
 3. Use that template as-is when creating new journal entries.
 
@@ -42,7 +42,7 @@ Ask the user (or infer from context/time cues):
 
 ### Step 1: Locate or create the journal entry
 
-1. Use the `obsidian` skill to check if today's journal file already exists.
+1. Use the `vault` skill to check if today's journal file already exists.
 2. If it exists → read it.
 3. If it doesn't exist → look up the journal template (see "Journal Template" above), then create the entry from it, filling in today's date.
 4. If the user specifies a different date → use that date instead.
