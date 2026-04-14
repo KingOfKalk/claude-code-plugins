@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v1.3.8...v1.4.0) (2026-04-14)
+
+
+### Features
+
+* **obsidian:** add daily journal skill ([#45](https://github.com/KingOfKalk/claude-code-plugins/issues/45)) ([3103475](https://github.com/KingOfKalk/claude-code-plugins/commit/3103475edabfbd6f36a3e9b313e615a00f837007))
+
+
+### Bug Fixes
+
+* Fix capitalization in plugin installation commands ([#44](https://github.com/KingOfKalk/claude-code-plugins/issues/44)) ([c3eef34](https://github.com/KingOfKalk/claude-code-plugins/commit/c3eef349daaeffac39ada375c7a3075c17fc45dc))
+* Fix plugin repository name casing in README ([#42](https://github.com/KingOfKalk/claude-code-plugins/issues/42)) ([0f66526](https://github.com/KingOfKalk/claude-code-plugins/commit/0f66526bc49b65459f871995b49bb24c6d03226c))
+
 ## [1.3.8](https://github.com/KingOfKalk/claude_code_plugins/compare/v1.3.7...v1.3.8) (2026-04-13)
 
 
