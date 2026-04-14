@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v1.4.0...v2.0.0) (2026-04-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **obsidian:** rename skill `obsidian` to `vault` ([#46](https://github.com/KingOfKalk/claude-code-plugins/issues/46))
+
+### Features
+
+* **obsidian:** rename skill `obsidian` to `vault` ([#46](https://github.com/KingOfKalk/claude-code-plugins/issues/46)) ([f7da406](https://github.com/KingOfKalk/claude-code-plugins/commit/f7da40608adb66b0e51a562aa2a48aed6ef774e8))
+
 ## [1.4.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v1.3.8...v1.4.0) (2026-04-14)
 
 
