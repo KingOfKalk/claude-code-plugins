@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/KingOfKalk/claude-code-plugins/compare/v3.0.0...v3.0.1) (2026-04-15)
+
+
+### Documentation
+
+* **plugins:** add READMEs for git and obsidian plugins ([#50](https://github.com/KingOfKalk/claude-code-plugins/issues/50)) ([3f5ef09](https://github.com/KingOfKalk/claude-code-plugins/commit/3f5ef09be4f53de5f62ed786d915d06d3759bebc))
+
 ## [3.0.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v2.0.0...v3.0.0) (2026-04-14)
 
 
