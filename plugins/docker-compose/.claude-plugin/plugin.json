@@ -1,4 +1,0 @@
-{
-  "name": "docker-compose",
-  "description": "Manage Docker Compose services with devcontainer detection and safety constraints."
-}

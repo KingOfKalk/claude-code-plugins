@@ -1,5 +1,5 @@
 ---
-name: docker-compose
+name: compose
 description: Manage Docker Compose services. Detects devcontainer environment and applies safety constraints to protect the dev stack.
 argument-hint: "<action> [service], e.g. 'status', 'rebuild backend', 'logs api 100', 'health'"
 disable-model-invocation: true
@@ -121,14 +121,14 @@ If a health check exists and status is unhealthy, show the health check log via 
 ## Examples
 
 ```
-/docker-compose status
-/docker-compose rebuild backend
-/docker-compose logs api 100
-/docker-compose restart worker
-/docker-compose stop redis
-/docker-compose up frontend
-/docker-compose down
-/docker-compose pull
-/docker-compose config
-/docker-compose health api
+/docker:compose status
+/docker:compose rebuild backend
+/docker:compose logs api 100
+/docker:compose restart worker
+/docker:compose stop redis
+/docker:compose up frontend
+/docker:compose down
+/docker:compose pull
+/docker:compose config
+/docker:compose health api
 ```
