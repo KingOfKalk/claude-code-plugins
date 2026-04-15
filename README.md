@@ -8,6 +8,13 @@ A collection of Claude Code plugins, installable via the marketplace.
 /plugin marketplace add kingofkalk/claude-code-plugins
 ```
 
+or in your terminal:
+
+```bash
+claude plugin marketplace add kingofkalk/claude-code-plugins
+```
+
+
 To pin a specific version:
 
 ```
