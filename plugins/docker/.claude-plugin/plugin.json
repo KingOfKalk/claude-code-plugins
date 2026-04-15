@@ -1,4 +1,4 @@
 {
   "name": "docker",
-  "description": "Manage Docker containers with automatic devcontainer detection and self-protection."
+  "description": "Manage Docker containers and Docker Compose services with automatic devcontainer detection and safety constraints. Includes a container skill (docker CLI) and a compose skill (docker compose)."
 }

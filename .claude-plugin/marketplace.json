@@ -15,14 +15,7 @@
     {
       "name": "docker",
       "source": "./plugins/docker",
-      "description": "Manage Docker containers with automatic devcontainer detection and self-protection.",
-      "keywords": ["docker", "containers", "devcontainer"],
-      "category": "developer-tools"
-    },
-    {
-      "name": "docker-compose",
-      "source": "./plugins/docker-compose",
-      "description": "Manage Docker Compose services with devcontainer detection and safety constraints.",
+      "description": "Manage Docker containers and Docker Compose services with automatic devcontainer detection and safety constraints. Includes a container skill (docker CLI) and a compose skill (docker compose).",
       "keywords": ["docker", "docker-compose", "containers", "devcontainer"],
       "category": "developer-tools"
     },
