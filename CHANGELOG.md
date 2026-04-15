@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v3.0.1...v4.0.0) (2026-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **docker:** The `docker-compose` plugin is removed. Reinstall docker with `/plugin install docker@kingofkalk-claude-code-plugins` and update invocations from `docker:docker` to `docker:container` and from
+
+### Refactoring
+
+* **docker:** merge docker-compose into docker plugin ([#52](https://github.com/KingOfKalk/claude-code-plugins/issues/52)) ([31cf854](https://github.com/KingOfKalk/claude-code-plugins/commit/31cf8549909dc8df9ef1904a1f9c1aba6de6790c))
+
 ## [3.0.1](https://github.com/KingOfKalk/claude-code-plugins/compare/v3.0.0...v3.0.1) (2026-04-15)
 
 
