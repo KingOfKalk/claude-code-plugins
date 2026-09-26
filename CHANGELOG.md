@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v4.0.0...v4.1.0) (2026-09-26)
+
+
+### Features
+
+* **git:** absorb git and forge rules from global CLAUDE.md ([#56](https://github.com/KingOfKalk/claude-code-plugins/issues/56)) ([5427b44](https://github.com/KingOfKalk/claude-code-plugins/commit/5427b44fc2d23035195d6d072b98e87997daead6))
+
 ## [4.0.0](https://github.com/KingOfKalk/claude-code-plugins/compare/v3.0.1...v4.0.0) (2026-04-15)
 
 
