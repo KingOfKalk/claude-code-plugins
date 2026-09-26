@@ -1,9 +1,9 @@
 ---
 name: commit
 description: Create atomic git commits following the Conventional Commits specification. Automatically splits unrelated changes into separate commits.
-argument-hint: "[scope or guidance, e.g. 'only auth changes']"
+argument-hint: "[path, guidance, or issue ref, e.g. 'only auth changes', 'refs #12']"
 disable-model-invocation: false
-allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git commit:*), Bash(git log:*), Bash(git reset:*), Bash(git apply:*), Bash(diff:*), Bash(rm .git/commit-skill-*), Write(.git/commit-skill-*)
+allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git commit:*), Bash(git log:*), Bash(git reset:*), Bash(git apply:*), Bash(git branch:*), Bash(diff:*)
 ---
 
 # Conventional Commit
@@ -45,6 +45,7 @@ Create one or more atomic git commits for the current changes.
 > This skill operates exclusively through git index commands. You MUST NOT use any of the following to modify file contents during the commit workflow:
 >
 > - `sed`, `awk`, `perl`, `tr`, or any stream editor
+> - `python`, `bash`, or any other scripting language
 > - `cp`, `mv`, or `cat` with `>` / `>>`
 > - The **Write** tool or **Edit** tool
 > - `echo` or `printf` with redirection
@@ -165,10 +166,20 @@ For each approved commit:
 
    **If a file contains changes destined for multiple commits**, use `git apply --cached` to stage individual hunks without modifying the working tree — never `git add -p` (requires interactive input), never manipulate file contents directly:
    1. Run `git diff -- <file>` and identify which hunks belong to this commit.
-   2. Extract the relevant hunk(s) **verbatim** — including the diff header lines (`diff --git`, `index`, `---`, `+++`) and the `@@` hunk header. Write the patch to a temp file, then apply it:
-      1. Use the **Write** tool to save the patch to `.git/commit-skill-<timestamp>.patch`
-      2. Run `git apply --cached .git/commit-skill-<timestamp>.patch`
-      3. Run `rm .git/commit-skill-<timestamp>.patch` (cleanup — file is harmless if left behind)
+   2. Extract the relevant hunk(s) **verbatim** — including the diff header lines (`diff --git`, `index`, `---`, `+++`) and the `@@` hunk header. Feed the patch to `git apply` on stdin with a quoted heredoc — no patch file, no Write tool:
+
+      ```
+      git apply --cached - <<'COMMIT_SKILL_PATCH'
+      diff --git a/src/app.ts b/src/app.ts
+      index 1a2b3c4..5d6e7f8 100644
+      --- a/src/app.ts
+      +++ b/src/app.ts
+      @@ -10,6 +10,7 @@
+      ...
+      COMMIT_SKILL_PATCH
+      ```
+
+      The heredoc is a single command and counts as one tool call. Always quote the delimiter (`'COMMIT_SKILL_PATCH'`) so the shell does not expand `$` or backticks inside the patch.
    3. Verify the staged content with `git diff --cached -- <file>` before committing.
    4. Create the commit. The index clears for that file. Repeat steps 1–3 for the next commit's hunks.
 
@@ -177,8 +188,13 @@ For each approved commit:
 2. Determine the correct **type** and optional **scope** (see Scope rules above) from the staged diff.
 3. Write a concise **description** in imperative mood, lowercase, no period at end. Max 72 chars.
 4. Add a **body** only if the change is non-trivial. Wrap at 72 chars.
-5. Add **footers** only if needed (e.g. `BREAKING CHANGE:`, `Refs: #123`).
-6. Commit with `git commit -m "..."` (use `-m` for subject and `-m` for body if needed).
+5. Add **footers** only if needed (e.g. `BREAKING CHANGE:`).
+6. **Issue reference.** If an issue number is known, end the body with `Refs #<issue-number>` (no colon). Sources, in order:
+   1. `$ARGUMENTS` contains an issue ref such as `refs #12` or `#12`.
+   2. The current branch follows `<type>/<issue-number>-<slug>` (check with `git branch --show-current`), e.g. `fix/231-auth-crashes-on-mondays` gives `Refs #231`.
+
+   Never invent an issue number.
+7. Commit with `git commit -m "..."` (use `-m` for subject and `-m` for body if needed).
 
 ### 5. Verify
 
@@ -190,6 +206,7 @@ If `$ARGUMENTS` is provided:
 
 1. **Path argument** (e.g. `.claude`, `src/auth`, `lib/utils.ts`): Treat as a **hard filter**. Only analyze and commit changes under that path. Scope all git commands (`git status`, `git diff`, `git add`) to that path using `-- <path>`. Ignore all changes outside it. If no changes exist under the path, inform the user and stop.
 2. **Semantic argument** (e.g. "only auth changes", "skip tests"): Treat as guidance for grouping and filtering commits by logical concern.
+3. **Issue reference** (e.g. `refs #12`): Add `Refs #12` to every commit body (see step 4.6). Can be combined with the other forms.
 
 ## Examples
 
@@ -204,7 +221,7 @@ The refresh token endpoint could be called concurrently,
 causing duplicate tokens. Added a mutex lock around the
 refresh logic.
 
-Refs: #442
+Refs #442
 ```
 
 ```
