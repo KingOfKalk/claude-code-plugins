@@ -33,7 +33,7 @@ marketplace identifier is `kingofkalk-claude-code-plugins`:
 
 ## Available Plugins
 
-- [**git**](plugins/git/README.md) — atomic git commits following the Conventional Commits spec, auto-splitting unrelated changes.
+- [**git**](plugins/git/README.md) — atomic Conventional Commits (`commit`), issue-to-pull-request workflow (`ship`), and guardrail hooks blocking `git -C`, commits/pushes on `main`, pushes to non-`origin` remotes, and AI attribution.
 - [**docker**](plugins/docker/README.md) — Docker CLI and Docker Compose skills with automatic devcontainer detection and safety constraints.
 - [**obsidian**](plugins/obsidian/README.md) — PARA-aware Obsidian vault operations via the Obsidian CLI, plus a daily journal skill for morning planning and evening review.
 - [**presentation-drafter**](plugins/presentation-drafter/skills/presentation-drafter/SKILL.md) — *skill* — draft structured presentation outlines in Markdown using SCR and Winston's "How to Speak" principles.
