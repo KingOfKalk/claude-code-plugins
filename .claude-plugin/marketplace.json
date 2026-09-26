@@ -8,8 +8,8 @@
     {
       "name": "git",
       "source": "./plugins/git",
-      "description": "Create atomic git commits following the Conventional Commits specification. Automatically splits unrelated changes into separate commits.",
-      "keywords": ["git", "commit", "conventional-commits"],
+      "description": "Git and forge workflow: atomic Conventional Commits, an issue-to-pull-request ship skill, and guardrail hooks (no git -C, no commits/pushes on main, origin only, no AI attribution).",
+      "keywords": ["git", "commit", "conventional-commits", "pull-request", "github", "hooks"],
       "category": "developer-tools"
     },
     {
